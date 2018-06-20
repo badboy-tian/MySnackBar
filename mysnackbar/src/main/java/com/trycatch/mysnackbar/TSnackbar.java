@@ -470,6 +470,10 @@ public final class TSnackbar {
         } else if (prompt == Prompt.WARNING) {
             setBackgroundColor(mContext.getResources().getColor(Prompt.WARNING.getBackgroundColor()));
             addIcon(Prompt.WARNING.getResIcon(), 0, 0);
+        }else if (prompt == Prompt.PROGRESS){
+            setBackgroundColor(mContext.getResources().getColor(Prompt.PROGRESS.getBackgroundColor()));
+            //addIcon(Prompt.PROGRESS.getResIcon(), 0, 0);
+            addIconProgressLoading(Prompt.PROGRESS.getResIcon(), true, false);
         }
         return this;
     }

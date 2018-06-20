@@ -14,7 +14,12 @@ public enum Prompt {
     /**
      * 绿色,成功
      */
-    SUCCESS(R.drawable.common_bounced_icon_successful, R.color.prompt_success);
+    SUCCESS(R.drawable.common_bounced_icon_successful, R.color.prompt_success),
+
+    /**
+     * 绿色,进度条
+     */
+    PROGRESS(R.drawable.rotate, R.color.prompt_success);
 
     private int resIcon;
     private int backgroundColor;

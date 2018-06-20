@@ -45,8 +45,8 @@ public abstract class BaseActivity extends AppCompatActivity {
 
             }
         });
-        snackBar.setPromptThemBackground(Prompt.SUCCESS);
-        snackBar.addIconProgressLoading(0,true,false);
+        snackBar.setPromptThemBackground(Prompt.PROGRESS);
+       // snackBar.addIconProgressLoading(0,true,false);
         snackBar.show();
         
     }

@@ -17,13 +17,11 @@ public class MainActivity extends BaseActivity {
     private Handler mHandler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
-            // TODO Auto-generated method stub
             super.handleMessage(msg);
             switch (msg.what) {
                 case 0:
                     if(snackBar!=null){
                         snackBar.setPromptThemBackground(Prompt.SUCCESS).setText("登录成功").setDuration(TSnackbar.LENGTH_LONG).show();
-
                     }
                     break;
                 case 1:
@@ -104,8 +102,8 @@ public class MainActivity extends BaseActivity {
 
                     }
                 });
-                snackBar.setPromptThemBackground(Prompt.SUCCESS);
-                snackBar.addIconProgressLoading(0,true,false);
+                snackBar.setPromptThemBackground(Prompt.PROGRESS);
+                //snackBar.addIconProgressLoading(0,true,false);
                 snackBar.show();
                 mHandler.postDelayed(gotoLoginActSuccess, 5000);
                 break;
@@ -117,8 +115,8 @@ public class MainActivity extends BaseActivity {
 
                     }
                 });
-                snackBar.setPromptThemBackground(Prompt.SUCCESS);
-                snackBar.addIconProgressLoading(0,true,false);
+                snackBar.setPromptThemBackground(Prompt.PROGRESS);
+                //snackBar.addIconProgressLoading(0,true,false);
                 snackBar.show();
                 mHandler.postDelayed(gotoLoginActFail, 5000);
                 break;
