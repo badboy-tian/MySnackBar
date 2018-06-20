@@ -1,3 +1,6 @@
+
+[![](https://www.jitpack.io/v/badboy-tian/MySnackBar.svg)](https://www.jitpack.io/#badboy-tian/MySnackBar)
+
 ## MySnackBar
 从顶部弹出的Snackbar,基于google SnackBar的控件，SnackBar所具有的属性他都具有，用于提示用户操作信息.
 并且提供默认三种信息: SUCCESS,WARNING,ERROR
